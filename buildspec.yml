@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+      - unzip awscliv2.zip
+      - ./aws/install
+      - npm install
+      - rm -f package.json
+      - rm -f package-lock.json.json
+      - rm -rf .git
+      - aws s3 sync --delete . $APP_BUCKET/apps/panvas

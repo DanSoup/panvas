@@ -1,0 +1,77 @@
+@font-face {
+  font-family: retro-gaming;
+  src: url('./Retro\ Gaming.ttf');
+}
+
+* {
+  font-family: "retro-gaming";
+  font-size: 22px;
+  font-weight: 100;
+}
+
+p, h1, h2, h3, h4 {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {font-size: calc(4 * 11px);}
+h2 {font-size: calc(3 * 11px);}
+h3 {font-size: calc(2 * 11px);}
+h4 {font-size: calc(2 * 11px);}
+p {font-size: calc(1.4 * 11px);}
+
+body {
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#app {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.main-content {
+  height: 200px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+header, footer, .collapsible, .example, .collapsible-content {
+  border: solid 2px black;
+  margin: 4px;
+  padding: 4px;
+}
+
+.collapsible {
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.collapsible-content {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.example {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+canvas {
+  border: solid 1px black;
+}

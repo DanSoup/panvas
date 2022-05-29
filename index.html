@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panvas</title>
+  <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Panvas</h1>
+      <h2>Pixel Perfect Canvas</h2>
+    </header>
+    <div class="main-content">
+      <div class="collapsible">
+        <div><h3>v Functions</h3></div>
+        <div class="collapsible-content">
+          <div class="example">
+            <div>
+              <h4>drawPixel(x, y);</h4>
+              <p><label for="drawPixel_x">x: </label><input id="drawPixel_x"></p>
+              <p><label for="drawPixel_y">y: </label><input id="drawPixel_y"></p>
+              <p>Draw a single pixel at a point. The point will be within the boundary of the pixel.</p>
+            </div>
+            <canvas id="drawPixel" class="panvas"></canvas>
+          </div>
+          <div class="example">
+            <div>
+              <h4>drawLine(firstPoint, secondPoint);</h4>
+              <p>Draw a straight line from one point to another.</p>
+            </div>
+            <canvas id="drawLine" class="panvas"></canvas>
+          </div>
+          <div class="example">
+            <div>
+              <h4>drawBezierCurve(start, end, controlPoints);</h1>
+              <p>Draw a bezier curve with a number of control points.</p>
+            </div>
+            <canvas id="drawBezierCurve" class="panvas"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      dansoup.co.uk - FONT: <a href="https://www.dafont.com/retro-gaming.font">Retro Gaming</a> by Daymarius
+    </footer>
+  </div>
+</body>
+<script type="module" src="index.js"></script>
+</html>
